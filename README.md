@@ -8,3 +8,5 @@ And then my account has to comment **that comment with the tag**, saying that I 
 Also, with the same conditions, what should I do to do the same thing when mentioned as @myuser instead of #exampletag, exactly what @originalworks does except that there is no !originalworks?  
 Please give a guide.  
 Thank you very much.  
+
+The program should be operated in Linux under an Anaconda/Miniconda 3.6 release. Please assume that steem-python and needed dependencies (please specify) are installed. 
