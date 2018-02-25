@@ -7,6 +7,6 @@ from steem.post import Post
 
 upvotePercent = 1
 minRep = 30
-accountName = 'exampleaccount'
+accountName = 'examplebot'
 postingKey = '' # I heard it is possible to set this in the terminal and get that posting key, possibly more secure. 
 tag = 'exampletag'
