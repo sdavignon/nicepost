@@ -1,12 +1,12 @@
 # nicepost
 ---
-https://steemit.com/steemdev/@benniebanana/getting-started-with-steem-python-upvote-and-comment-bot-examples-linux  
-I saw this post and want to replicate this, but I need to set up an upvote bot that does the following.  
-I need to upvote the **main post**, of which it has a **comment** with a specific tag #exampletag in the comment body. (NOT the tag in the main post or the main post body, should work like @originalworks except the trigger is #exampletag instead of @originalworks or !originalworks) The comment should not be made by the original author and the commenter has to have a rep of over 30.  
-And then my account has to comment **that comment with the tag**, saying that I upvoted the main post. After that, my account has to resteem the main post. How should I do this in steem-python? The upvote and comment should only be done once per main post, working exactly like @originalworks except for the trigger and some constraints.
+The scripts are executed using start.sh, which creates a screen process of tag.py or mention.py. 
+The script tag.py automatically upvotes the **main post**, of which it has a **comment** with a specific tag #exampletag in the comment body. (NOT the tag in the main post or the main post body, this bot works like @originalworks except the trigger is #exampletag instead of @originalworks or !originalworks)  
+![](https://steemitimages.com/DQmbvs91oLiyz1QpBMgjCEnJUetNujQz8WdM6SaKjcFTezh/image.png)
+For example, If the comment looks like `#nicepost This is really a nice post!`, the bot detects #nicepost. 
+The comment should not be made by the original author and the commenter has to have a rep of over 30. Else, the bot does not upvote.  
+And then, the bot account comments to **that comment with the tag**, with a message that the bot upvoted the main post. After that, the bot account resteems the main post. The upvote and comment are only done once per main post, working exactly like @originalworks except for the trigger and some constraints.
 
-Also, with the same conditions, what should I do to do the same thing when mentioned as @myuser instead of #exampletag, exactly what @originalworks does except that there is no !originalworks?  
-Please give a guide.  
-Thank you very much.  
+Also, with the same conditions, there is also a separate script mention.py for when mentioned as @myuser instead of #exampletag, exactly what @originalworks does except that there is no !originalworks.  
 
-The program should be operated in Linux under an Anaconda/Miniconda 3.6 release. Please assume that steem-python and needed dependencies (please specify) are installed. 
+This project is to be used for a campaign encouraging comments for undervalued posts in a community, and enables manual curation, and a curation trail following the bot. 
